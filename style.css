@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-image: url("mainPc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(61, 37, 37);
+    background-blend-mode:lighten ;
+}
+#main-photo{
+    height: 100vh;
+    width: 100%;
+}
+.nav{
+    position: sticky;
+    
+}
+#nav-heading{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    padding: 20px;
+}
+.top-navbar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    /* justify-content: space-between; */
+    /* background-color: rgb(10, 10, 19); */
+}
+
+#shopping-cart{
+    margin-right: 60px;
+    margin-top: 7px;
+}
+.fa-cart-plus {
+    color: white;
+    position: relative;
+    top: 8px;
+    left: 2px;
+}
+.cart-items{
+    color: white;
+    position: absolute;
+    top: 8px;
+    right: 48px;
+    background: rgb(23, 23, 102);
+    padding: 0 5px;
+    border-radius: 30%;
+    /* color: var(--mainWhite); */
+}
+.cart-overlay{
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    background-color: transparent;
+    /* background: wheat; */
+    z-index: 2;
+    visibility: hidden;
+
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: #2a4158 ;
+    padding: 1.5rem;
+    transition: all 0.3s linear;
+    z-index: 3;
+    transform: translateX(100%);
+}
+.showCart{
+    transform: translateX(0);
+}
+.transparentBcg{
+    visibility: visible;
+}
+@media screen and (min-width:768px){
+    .cart{
+        width: 30vw;
+        min-width: 450px;
+    }
+}
+.close-cart{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.cart h2{
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+#clear-cart{
+    cursor: pointer;
+}
+.fa-cart-plus{
+    cursor: pointer;
+}
+
+.cart-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 20px;
+    margin: 20px 0;
+
+}
+.cart-item h4{
+    font-size: 13px;
+}
+
+.cart-item h5{
+    margin: 12px 0;
+}
+#cartItemImage{
+    height: 75px;
+    width: 75px;
+}
+.cart-footer{
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.cart-footer h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.clear-cart{
+    display: inline-block;
+    padding: 15px;
+    font-size: 15px;
+    background-color: rgba(252, 0, 0, 0.466);
+    border: 1px solid black;
+    text-transform: capitalize;
+    color: white;
+}
+.remove-item{
+    color: rgb(250, 108, 108);
+    cursor: pointer;
+}
+.center-items{
+    text-align: center;
+    margin: auto;
+    margin-top: 16%;
+    width: 50%;
+}
+.fa-chevron-up,.fa-chevron-down{
+    cursor: pointer;
+    display: block;
+}
+#center-heading{
+    color: white;
+    font-size: 55px;
+}
+.center-button-class{
+    display: inline-block;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    
+}
+#center-button{
+    color: white;
+    text-decoration: none;
+}
+.center-button-class:hover{
+    background-color: rgb(255, 255, 255);
+    
+}
+#center-button:hover{
+    color: black;
+}
+.product-container{
+    position: relative;
+    display: inline-block;
+    margin-top: 500px;
+    /* background-color: rgb(117, 82, 82); */
+    padding: 60px;
+    
+    margin-left: 50px;
+
+}
+.product-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+#product-photo{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+.product-card{
+    border: 1px solid black;
+    background-color: rgb(252, 252, 252);
+    /* width: 300px;
+    height: 350px; */
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 29%;
+    width: fit-content;
+    /* margin: 20px; */
+    text-align: center;
+    
+}
+h3{
+    font-size: 20px;
+
+}
+#add-to-cart{
+    background-color: orange;
+    font-family: 'poppins';
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+    
+    
+    
+}
