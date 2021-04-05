@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("mainPc.jpg");
+  background-image: url("../assets/mainPc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(61, 37, 37);
@@ -16,9 +16,7 @@ body {
   height: 100vh;
   width: 100%;
 }
-.nav {
-  position: sticky;
-}
+
 #nav-heading {
   text-decoration: none;
   font-size: 20px;
@@ -178,10 +176,12 @@ body {
 }
 .center-button-class:hover {
   background-color: rgb(255, 255, 255);
-}
-#center-button:hover {
   color: black;
 }
+.center-button-class:hover #center-button {
+  color: black;
+}
+
 .product-container {
   position: relative;
   display: inline-block;
@@ -205,16 +205,18 @@ body {
   text-align: center;
 }
 .product-card {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-radius: 20px;
   background-color: rgb(252, 252, 252);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   /* width: 300px;
     height: 350px; */
-  padding: 2%;
+  margin: 2%;
   flex-grow: 1;
-  flex-basis: 29%;
+  flex-basis: 25%;
   width: fit-content;
-  /* margin: 20px; */
   text-align: center;
+  padding-bottom: 2%;
 }
 h3 {
   font-size: 20px;
@@ -227,4 +229,14 @@ h3 {
   display: inline-block;
   border: none;
   font-size: 16px;
+}
+.btn-class {
+  cursor: pointer;
+}
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+
+  background-color: rgb(61, 37, 37);
 }
