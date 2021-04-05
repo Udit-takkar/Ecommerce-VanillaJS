@@ -1,41 +1,40 @@
 {
-    "items": [
+  "items": [
     {
-        "name": "AMD Ryzen 5 3500X",
-        "price": 350,
-        "id": "1",
-        "images": "amdryzen5.jpg"
-    },
-    {   
-        "name": "AMD Ryzen 3 3200G",
-        "price": 200,
-        "id": "2",
-        "images": "amdryzen3.jpg"
-
+      "name": "AMD Ryzen 5 3500X",
+      "price": 350,
+      "id": "1",
+      "images": "../assets/amdryzen5.jpg"
     },
     {
-        "name": "HyperX Predator 8GB",
-        "price":500,
-        "id": "3",
-        "images": "hyperx.jpg"
+      "name": "AMD Ryzen 3 3200G",
+      "price": 200,
+      "id": "2",
+      "images": "../assets/amdryzen3.jpg"
     },
     {
-        "name": "XPG ADATA GAMMIX D30 DDR4",
-        "price": 100,
-        "id": "4",
-        "images": "Xpg.jpg"
+      "name": "HyperX Predator 8GB",
+      "price": 500,
+      "id": "3",
+      "images": "../assets/hyperX.jpg"
     },
     {
-        "name": "ZOTAC Gaming GeForce RTX 2080",
-        "price": 300,
-        "id": "5",
-        "images": "/Ecommerce/zotacgaming'.jpg"
+      "name": "XPG ADATA GAMMIX D30 DDR4",
+      "price": 100,
+      "id": "4",
+      "images": "../assets/xpg.jpg"
     },
     {
-        "name": "Asus GeForce GT 710 2GB GDDR5",
-        "price": 150,
-        "id": "6",
-        "images":"asusgeforce.jpg"
+      "name": "ZOTAC Gaming GeForce RTX 2080",
+      "price": 300,
+      "id": "5",
+      "images": "../assets/zotac2080.jpg"
+    },
+    {
+      "name": "Asus GeForce GT 710 2GB GDDR5",
+      "price": 150,
+      "id": "6",
+      "images": "../assets/asusgeforce.jpg"
     }
-]
+  ]
 }
